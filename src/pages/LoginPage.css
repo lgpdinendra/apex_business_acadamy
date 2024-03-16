@@ -1,0 +1,46 @@
+body{
+    background-color: #E5F8EC;
+}
+.maincontainer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+    
+}
+.admin{
+    flex: 1;
+    font-weight: bold;
+    padding: 0;
+}
+.teacher{
+    flex: 1;
+    padding: 0;
+}
+.student{
+    flex: 1;
+    padding: 0;
+}
+.btnname{
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.btndecription{
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.btnicon{
+    font-size: 2rem;
+}
+.btn{
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border: none;
+    background-color: #508864 ;
+}
+.btn:hover{
+    background-color: #EEF6B8;
+}
