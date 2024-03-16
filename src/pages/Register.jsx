@@ -15,7 +15,7 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { IoSend } from "react-icons/io5";
 
 
-const Login = () => {
+const Register = () => {
 
 let navigate = useNavigate(); 
   const routeChange = () =>{ 
@@ -31,11 +31,11 @@ let navigate = useNavigate();
       <div className='secondcontainer'>
         <div className='nameofacadamy'>APEX Business Acadamy <br/> (pvt) LTD</div>
         <div className='nameofwelcome'>This is a APEX Business Acadamy Offical Website. All of Student,Teachers can used this site</div>
-      
+      <p className='Register'>Register</p>
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
       <FormControl variant="standard">
         <InputLabel htmlFor="input-with-icon-adornment">
-          User ID
+          ID
         </InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -49,7 +49,21 @@ let navigate = useNavigate();
       <br/>
       <FormControl variant="standard">
         <InputLabel htmlFor="input-with-icon-adornment">
-          User Password
+          Username
+        </InputLabel>
+        <Input
+          id="input-with-icon-adornment"
+          startAdornment={
+            <InputAdornment position="start">
+              <MdAccountCircle />
+            </InputAdornment>
+          }
+        />
+      </FormControl>
+      <br/>
+      <FormControl variant="standard">
+        <InputLabel htmlFor="input-with-icon-adornment">
+          Password
         </InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -66,7 +80,7 @@ let navigate = useNavigate();
 
       
       <button className ='btn_log' endIcon={<IoSend />}>
-        LogIn
+        Register
       </button>
  
       </div>
@@ -74,4 +88,4 @@ let navigate = useNavigate();
   )
 }
 
-export default Login
+export default Register

@@ -46,4 +46,24 @@
  background-color:#073217;
  color: white;
 }
- 
+
+.btn_log{
+  text-align: center;
+  align-items: center;
+  background-color: #4e7b5f;
+  color: #E1F6FB;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+.btn_log:hover{
+  background-color: #92cbf9;
+  color: black;
+}
+.Register{
+  font-size: 2rem;
+  padding: 0;
+  margin-top: 0;
+  font-weight: bold;
+}
