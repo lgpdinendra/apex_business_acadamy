@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom";
-import Img1 from '../images/img1.jpg'
+import Img1 from '../assets/images/img1.jpg'
 import './LoginPageHome.css'
 import Box from '@mui/material/Box';
 import Input from '@mui/material/Input';
@@ -16,9 +16,12 @@ import { IoSend } from "react-icons/io5";
 
 
 const Login = () => {
+  const [userId, setUserId] = useState('');
+  const [password, setPassword] = useState('');
 
 let navigate = useNavigate(); 
-  const routeChange = () =>{ 
+
+  const handleLogin = () =>{ 
     let path = `LoginPage`; 
     navigate(path);
   }
@@ -39,6 +42,8 @@ let navigate = useNavigate();
         </InputLabel>
         <Input
           id="input-with-icon-adornment"
+          value={userId}
+              onChange={(e) => setUserId(e.target.value)}
           startAdornment={
             <InputAdornment position="start">
               <MdAccountCircle />
@@ -53,6 +58,8 @@ let navigate = useNavigate();
         </InputLabel>
         <Input
           id="input-with-icon-adornment"
+          value={password}
+              onChange={(e) => setPassword(e.target.value)}
           startAdornment={
             <InputAdornment position="start">
               <RiLockPasswordLine />
@@ -65,7 +72,7 @@ let navigate = useNavigate();
     <br/>
 
       
-      <button className ='btn_log' endIcon={<IoSend />}>
+      <button className ='btn_log' endIcon={<IoSend />} onClick={handleLogin}>
         LogIn
       </button>
  

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-import Img1 from '../images/img1.jpg'
+import Img1 from '../assets/images/img1.jpg'
 import './LoginPageHome.css'
 
 const LoginPageHome = () => {

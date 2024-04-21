@@ -3,7 +3,7 @@ import './LoginPage.css'
 import { GrUserAdmin } from "react-icons/gr";
 import { PiStudentLight } from "react-icons/pi";
 import { GiTeacher } from "react-icons/gi";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
 
@@ -34,6 +34,7 @@ const LoginPage = () => {
         </button>
       </div>
 
+<Link to='/Login' className='link-class'>
       <div className='student'>
       <button className='btn' onClick={routeChange}>
             <PiStudentLight className='btnicon'/> 
@@ -45,7 +46,9 @@ const LoginPage = () => {
                  materials and assignments.</div>
         </button>
       </div>
+      </Link>
 
+      <Link to='/LoginTeacher' className='link-class'>
       <div className='teacher'>
       <button className='btn' onClick={routeChangeteacher}>
             <GiTeacher className='btnicon'/> 
@@ -57,6 +60,7 @@ const LoginPage = () => {
                   assignments.</div>
         </button>
       </div>
+      </Link>
     </div>
   )
 }
